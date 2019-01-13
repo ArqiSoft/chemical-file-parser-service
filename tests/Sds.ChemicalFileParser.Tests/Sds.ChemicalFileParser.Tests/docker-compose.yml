@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   rabbitmq:
-    image: docker.your-company.com/osdr-rabbitmq:3.6
+    image: docker.scidatasoft.com/osdr-rabbitmq:3.6
     hostname: "rabbitmq-test"
     environment:
       - RABBITMQ_DEFAULT_VHOST=osdr_test
@@ -22,7 +22,7 @@ services:
   chemical-file-parser-service:
     restart: always
     container_name: chemical-file-parser-service
-    image: docker.your-company.com/sds/chemical-file-parser-service:ci-${BUILD_NUMBER}
+    image: docker.scidatasoft.com/sds/chemical-file-parser-service:ci-${BUILD_NUMBER}
     entrypoint: /bin/bash
     environment:
     - TZ=EST
@@ -41,7 +41,7 @@ services:
 
   tests:
     container_name: chemical-parser-tests
-    image: docker.your-company.com/chemical-parser-tests:ci-${BUILD_NUMBER}
+    image: docker.scidatasoft.com/chemical-parser-tests:ci-${BUILD_NUMBER}
     entrypoint: /bin/bash
     environment:
       - OSDR_LOG_FOLDER=/logs

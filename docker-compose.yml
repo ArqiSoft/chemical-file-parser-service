@@ -3,7 +3,7 @@ version: '3'
 services:
     chemical-file-parser-service:
         container_name: chemical-file-parser-service
-        image: docker.your-company.com/sds/chemical-file-parser-service:latest
+        image: docker.scidatasoft.com/sds/chemical-file-parser-service:latest
         environment:
         - TZ=EST
         - OSDR_LOG_FOLDER=/logs
