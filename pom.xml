@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
         <swagger.version>2.4.0</swagger.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<nexus.release.url>https://oss.sonatype.org/service/local/staging/deploy/maven2</nexus.release.url>
+        <nexus.release.url>https://oss.sonatype.org/service/local/staging/deploy/maven2</nexus.release.url>
     </properties>
 
     <parent>
@@ -86,6 +86,12 @@
             <artifactId>messaging</artifactId>
             <version>1.1</version>
         </dependency>
+        <dependency>
+            <groupId>cisd</groupId>
+            <artifactId>jhdf5</artifactId>
+            <version>12.02.3</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
     <build>
@@ -121,10 +127,15 @@
             <id>nexus</id>
             <url>${nexus.release.url}</url>
         </repository>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>loci</id>
+            <name>Loci Maven Repository</name>
+            <url>http://dev.loci.wisc.edu/maven2/releases/</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>

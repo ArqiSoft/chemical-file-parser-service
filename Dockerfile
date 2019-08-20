@@ -1,4 +1,4 @@
-FROM maven:3.5.4-jdk-8-slim AS builder
+FROM maven:3.6-jdk-10-slim AS builder
 COPY . /usr/src/chemical-parser
 WORKDIR /usr/src/chemical-parser
 RUN mvn -Pdocker clean package
