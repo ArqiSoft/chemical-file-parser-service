@@ -25,7 +25,7 @@ services:
   chemical-file-parser-service:
     restart: always
     container_name: chemical-file-parser-service
-    image: leanda/chemical-file-parser-service:${TAG_VERSION-latest}
+    image: leanda/chemical-file-parser:${TAG_VERSION-latest}
     entrypoint: /bin/bash
     environment:
       - TZ=EST
