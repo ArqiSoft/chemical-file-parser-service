@@ -23,7 +23,7 @@ import com.npspot.jtransitlight.transport.JTransitLightTransportException;
 import sds.chemicalfileparser.domain.commands.ParseFile;
 import com.sds.storage.BlobStorage;
 import com.sds.storage.gridfs.GridFSBlobStorage;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 
 @Configuration

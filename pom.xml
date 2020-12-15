@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.arqisoft</groupId>
@@ -14,7 +14,7 @@
         <build.scm.hash>${env.GIT_COMMIT_SHORT}</build.scm.hash>
         <build.scm.author>${env.GIT_AUTHOR_NAME}</build.scm.author>
         <mongodb.databaseName>osdr_dev</mongodb.databaseName>
-		
+
         <java.version>1.8</java.version>
         <swagger.version>2.4.0</swagger.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -87,10 +87,9 @@
             <version>1.1</version>
         </dependency>
         <dependency>
-            <groupId>cisd</groupId>
-            <artifactId>jhdf5</artifactId>
-            <version>12.02.3</version>
-            <type>jar</type>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
     </dependencies>
 
